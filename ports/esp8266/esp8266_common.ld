@@ -110,6 +110,7 @@ SECTIONS
         *py/obj*.o*(.literal* .text*)
         *py/opmethods.o*(.literal* .text*)
         *py/parse*.o*(.literal* .text*)
+        *py/profile*.o*(.literal* .text*)
         *py/qstr.o*(.literal* .text*)
         *py/repl.o*(.literal* .text*)
         *py/runtime.o*(.literal* .text*)
@@ -128,7 +129,7 @@ SECTIONS
         *extmod/*.o*(.literal* .text*)
 
         *lib/oofatfs/*.o*(.literal*, .text*)
-        */libaxtls.a:(.literal*, .text*)
+        *lib/axtls/*.o(.literal*, .text*)
         *lib/berkeley-db-1.xx/*.o(.literal*, .text*)
         *lib/libm/*.o*(.literal*, .text*)
         *lib/mp-readline/*.o(.literal*, .text*)
